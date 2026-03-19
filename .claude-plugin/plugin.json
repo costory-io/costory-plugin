@@ -1,0 +1,16 @@
+{
+  "name": "costory",
+  "version": "1.0.0",
+  "description": "Costory — cloud cost management tools for AWS, GCP, and Azure. Query costs, explore metrics, investigate changes, set up alerts, and send reports to Slack.",
+  "author": {
+    "name": "Costory",
+    "email": "support@costory.io"
+  },
+  "homepage": "https://costory.io",
+  "repository": "https://github.com/costory-io/costory-plugin",
+  "license": "MIT",
+  "keywords": ["cloud", "costs", "aws", "gcp", "azure", "finops", "costory"],
+  "skills": "./skills/",
+  "agents": "./agents/",
+  "mcpServers": "./.mcp.json"
+}

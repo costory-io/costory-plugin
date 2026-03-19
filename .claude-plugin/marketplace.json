@@ -1,0 +1,22 @@
+{
+  "name": "costory-marketplace",
+  "owner": {
+    "name": "Costory",
+    "email": "support@costory.io"
+  },
+  "metadata": {
+    "description": "Official Costory plugins for Claude Code",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "costory",
+      "source": {
+        "source": "github",
+        "repo": "costory-io/costory-plugin"
+      },
+      "description": "Cloud cost management tools — query costs, explore metrics, investigate changes, set up alerts, and send Slack reports.",
+      "version": "1.0.0"
+    }
+  ]
+}
