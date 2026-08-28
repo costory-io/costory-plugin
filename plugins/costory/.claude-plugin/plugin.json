@@ -1,7 +1,7 @@
 {
   "name": "costory",
-  "description": "Costory FinOps plugin: agent skills for query investigation, virtual dimensions (custom cost axes), dashboard and report creation with context-first widget inheritance, DIGEST workflows with preview and delivery safety, and ready-made tracking recipes.",
-  "version": "0.8.4",
+  "description": "Costory FinOps plugin: agent skills for cost-change investigation, querying, virtual dimensions (custom cost axes), dashboard and report creation with context-first widget inheritance, DIGEST workflows with preview and delivery safety, and ready-made tracking recipes.",
+  "version": "0.9.0",
   "author": {
     "name": "Costory",
     "email": "engineering@costory.io"
@@ -10,6 +10,7 @@
     "costory",
     "finops",
     "cloud-cost",
+    "cost-change-investigation",
     "query",
     "virtual-dimensions",
     "dashboards",

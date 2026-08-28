@@ -1,6 +1,12 @@
 {
-  "version": "0.8.4",
+  "version": "0.9.0",
   "skills": {
+    "cost-change-investigation": {
+      "id": "cost-change-investigation",
+      "name": "cost-change-investigation",
+      "path": "plugins/costory/skills/cost-change-investigation/SKILL.md",
+      "description": "Investigate a cost change with contribution, timing, usage, metric, event, alert, and terminology evidence."
+    },
     "recipes": {
       "id": "recipes",
       "name": "recipes",
