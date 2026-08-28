@@ -105,7 +105,6 @@ Reproduce values character for character; never normalise case, trim, expand, or
 - Summary is 1-2 client-facing sentences describing concrete findings, never the analysis process. Never ever mention tools, methods, evidence sources, or caveats.
 - When data is sufficient use this format: "Costs increased because of a ($/€)xx increase/spike/step up in [contributor] in the [whatever context] at xx dates, [extra metrics or counter acting factors]".
 - Surface a strong usage result directly, including material magnitude and timing. If contributors are weak but timing or MCP evidence is useful, summarize that pattern instead.
-- Never mention accounts or subaccounts named after humans ("charles gorottin", "jeancaisse", ...).
 - Resolve opaque terms before using them; omit terms that remain irrelevant or ubiquitous.
 - If contribution analysis fails or returns no interesting factors, query costs directly using the MCP to conduct the cost change analysis. If even that yields no useful explanations, use `summary=""` as a last resort.
 - Methodology must concisely cover selected columns, local and MCP evidence, omitted weak/redundant contributors, reliability, and why an empty summary was necessary when applicable.
