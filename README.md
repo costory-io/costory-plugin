@@ -64,6 +64,7 @@ Skills are the workflow layer: each one encodes how to sequence the tools above 
 
 | MCP `skillId` | Use when |
 |---|---|
+| `cost-change-investigation` | Explain a cost change with contribution, timing, usage, metric, event, alert, and terminology evidence |
 | `query` | Cost, usage, metric, formula, and budget investigation. Explorer period-over-period only; hands off "what changed" to `reports` Explain |
 | `virtual-dimensions` | Create, edit, preview, and publish custom cost axes with ordered CEL rules |
 | `dashboards` | Create or extend dashboards with context-first widget inheritance and overview generation |
@@ -93,6 +94,7 @@ skills.json                            ← MCP skillId -> SKILL.md path
 plugins/costory/
   .claude-plugin/plugin.json
   skills/
+    cost-change-investigation/SKILL.md
     query/SKILL.md
     virtual-dimensions/SKILL.md
     dashboards/SKILL.md
