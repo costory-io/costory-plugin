@@ -64,6 +64,8 @@ Provide a period with **either** `datePreset` **or** `from` + `to` (ISO dates, i
 | `Period` | Single-bucket total or composition for the whole range (good with `groupBy`) |
 | `Hour` | Rare; fine-grained short windows |
 
+**Billing lag:** AWS/GCP cost data can take up to **48 hours** to land. Presets are already shifted back by two days so they do not include incomplete days. Do **not** treat yesterday or today as complete; those days may appear with partial figures. If the user asks for a calendar window that includes them, use explicit `from`/`to` and say the last 1–2 days can be incomplete.
+
 **Time series vs comparison:** omit `compare` for evolution within one range. For period-over-period deltas, pass `compare` — prefer `datePreset` on the primary period + `compare: {}` (or `{ enabled: true }`) so the server auto-derives the **preceding period** (preset-aware, e.g. `LAST_MONTH` → previous calendar month). Pass `compare: { from, to }` only for a custom other range. Optional `compare.chartType`: `WATERFALL` (default), `TABLE`, or `KPI_BREAKDOWN`.
 
 ### Limit
@@ -528,6 +530,7 @@ After useful results, consider:
 ## Safety / anti-patterns
 
 - Prefer `datePreset` over hand-computed `from`/`to` when a preset matches — do not freeze last-month/trailing windows as absolute dates
+- Do not treat yesterday / today as complete billing days — presets are already shifted ~48h; do not invent a “correction” on top
 - Do not invent a `datePreset` token — only the 16 enum values above are valid; if none matches the requested range, use explicit `from`/`to` (a bad token fails with `-32602 Invalid option … path: ["datePreset"]`)
 - Do not combine `datePreset` with `from`/`to`
 - Do not invent CEL field names — use `search` `type: ["dimensions"]` or `get_context` popular groupBys
